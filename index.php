@@ -32,6 +32,8 @@
                     </li>
 
                     <a href="resources/documents/CV Jesús Martínez bruque.pdf" class="btn btn-primary button-link ms-4" target="_blank">Descargar CV</a>
+
+                    <img id="modoButton" class="ms-3" onclick="activateDarkMode()" src="resources/imgs/moon.png" alt="Modo">
                 </ul>
             </div>
         </div>

@@ -3,10 +3,6 @@ h2{
     margin-bottom:2em
 }
 
-body{
-    background-color: #efefef;
-}
-
 img{
     max-width: 100%;
 }
@@ -19,11 +15,15 @@ header{
     padding-bottom: 10em;
 }
 
+#modoButton{
+    width: 30px;
+    height:fit-content;
+}
+
  #changing-text{
     position: absolute;
     z-index: -1;
     top: 70%;
-    color: #dbdada;
     font-size: 12em;
     max-width: 100%;
     text-overflow: ellipsis;
@@ -58,9 +58,6 @@ div#lenguajes > div > img{
 }
 
 /* Section : Contacto */
-#contacto{
-    background-color: #242424;
-}
 
 #contacto div.row > :first-child{
     padding-left: 10%;

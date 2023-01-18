@@ -1,3 +1,21 @@
+// Modo claro y modo oscuro
+// obtener elementos de link
+var style = document.getElementById("estilos");
+var imagen_modo = document.getElementById("modoButton");
+var oscuro = false;
+
+// función para activar el dark mode
+function activateDarkMode() {
+  if (oscuro == false){
+    style.setAttribute("href","css/dark-style.css");
+    imagen_modo.setAttribute("src","resources/imgs/sun.png");
+    oscuro = true; 
+  }else{
+    style.setAttribute("href","css/light-style.css");
+    imagen_modo.setAttribute("src","resources/imgs/moon.png");
+    oscuro = false; 
+  } 
+}
 
 //Efecto de escritura y borrado de texto
 var texts = ["#Desarrollador", "#Web", "#Marketing"];

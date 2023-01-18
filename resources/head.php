@@ -7,6 +7,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link id="estilos" rel="stylesheet" href="css/light-style.css" />
         <title><?php echo $titulo?></title>
     </head>
 <?php
