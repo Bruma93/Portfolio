@@ -1,0 +1,71 @@
+body{
+    background-color: #efefef;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    min-height: 100vh;
+}
+
+ #changing-text{
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    color: #dbdada;
+    font-size: 12em;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
+.invisible {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity linear;
+  }
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity  linear;
+  }
+
+.card{
+    margin-bottom: 2em;
+    transition: 0.4s;
+}
+
+.card:hover{
+    box-shadow: -13px 24px 48px -16px #a1a1a1;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+   #changing-text{
+        font-size: 2em;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    a.navbar-brand{
+        max-width: 50%;
+    }
+
+    
+}
+
+@media (min-width: 992px) {
+    a.navbar-brand{
+        max-width: 25%;
+    }
+
+    header > div > img{
+        min-width: 28em;
+    }
+
+}
+  
+
