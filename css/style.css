@@ -1,3 +1,8 @@
+h2{
+    font-size: 4em;
+    margin-bottom:2em
+}
+
 body{
     background-color: #efefef;
 }
@@ -8,6 +13,10 @@ img{
 
 header{
     min-height: 100vh;
+}
+
+.section:not(:last-of-type){
+    padding-bottom: 10em;
 }
 
  #changing-text{
@@ -30,19 +39,43 @@ header{
     opacity: 1;
     transition: opacity  linear;
   }
-
 .card{
     margin-bottom: 2em;
+}
+.shadow_animation{
     transition: 0.4s;
 }
 
-.card:hover{
+.shadow_animation:hover{
     box-shadow: -13px 24px 48px -16px #a1a1a1;
     transform: scale(1.05);
     transition: 0.4s;
 }
 
+/* Section : Lenguajes */
+div#lenguajes > div > img{
+    height: fit-content;
+}
+
+/* Section : Contacto */
+#contacto{
+    background-color: #242424;
+}
+
+#contacto div.row > :first-child{
+    padding-left: 10%;
+}
+
+#contacto div.row > :last-child{
+    overflow: hidden;
+    max-height: 800px;
+}
+
+/* Media Queries*/
 @media (max-width: 768px) {
+    .container{
+        max-width:90%;
+    }
    #changing-text{
         font-size: 2em;
         max-width: 100%;
@@ -50,6 +83,9 @@ header{
 }
 
 @media (max-width: 991px) {
+    h2{
+        font-size: 3em;
+    }
     a.navbar-brand{
         max-width: 50%;
     }
