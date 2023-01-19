@@ -3,45 +3,14 @@
     require('resources/head.php');
 ?>
 <body >
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">
-                <img class="mw-100" src="resources/imgs/iconMenu.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#educación">Educación</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-
-                    <a href="resources/documents/CV Jesús Martínez bruque.pdf" class="btn btn-primary button-link ms-4" target="_blank">Descargar CV</a>
-
-                    <img id="modoButton" class="ms-3" onclick="activateDarkMode()" src="resources/imgs/moon.png" alt="Modo">
-                </ul>
-            </div>
-        </div>
-    </nav>
     <?php require('resources/body.php');?>
+    <?php require('resources/nav.php');?>
 <header class="d-flex align-items-center flex-column">
-<div class="my-auto">
-    <img class="mx-auto mw-100" src="resources/imgs/logo.png" alt="Logo">
+
+<div class="container my-auto d-grid">
+    <img class="mx-auto mw-100 mb-4" src="resources/imgs/logo.png" alt="Logo">
+    <h3 id="changing-text" class="text-center visible"></h3>
 </div>
-<h3 id="changing-text" class="text-center visible"></h3>
 
 
 </header>
@@ -49,7 +18,7 @@
     <h2 class="text-center">Portfolio</h2>
     <div class="row d-flex justify-content-around">
         <div class="card shadow_animation col-4" style="width: 18rem;">
-            <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
+            <img src="resources/imgs/AOVE_LaTaranta_deskopt.webp" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -76,7 +45,7 @@
             </div>
 
         <div class="card shadow_animation col-4" style="width: 18rem;">
-            <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
+            <div class="card-img-top"><img src="resources/imgs/statFootball.webp"  alt="..."></div> 
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -85,7 +54,7 @@
         </div>
 
         <div class="card shadow_animation col-4" style="width: 18rem;">
-            <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
+            <img src="resources/imgs/Cabecera.webp" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -94,7 +63,7 @@
         </div>
 
         <div class="card shadow_animation col-4" style="width: 18rem;">
-                <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
+                <img src="resources/imgs/futbol_v1.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -107,21 +76,25 @@
 
 <div id="lenguajes" class="container section">
     <h2 class="text-center mb-2">Lenguajes, tecnologías y...</h2>
-    <p class="text-center">otras cosas bonitas</p>
-    <div class="row d-flex justify-content-around">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/javascript.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/html.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="HtML5">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/css-3.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/php.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/swift.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Swift">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/kotlin.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Kotlin">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/vue.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Vue JS">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/laravel.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/git.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Git">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/wordpress.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/visualStudio.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Visual Studio">
-        <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/Photoshop.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Photoshop">
+    <p class="text-center mb-5">otras cosas bonitas</p>
+    <div class="row">
+        <div class="col col-2-md">A</div>
+        <div class="row col col-2-md d-flex justify-content-around">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/javascript.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/html.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="HtML5">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/css-3.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/php.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/swift.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Swift">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/kotlin.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Kotlin">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/vue.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Vue JS">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/laravel.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/git.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Git">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/wordpress.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/visualStudio.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Visual Studio">
+            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/Photoshop.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Photoshop">
+        </div>
     </div>
+    
 </div>
 
 <div id="experiencia" class="container section">

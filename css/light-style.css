@@ -1,6 +1,10 @@
 body{
     background-color: #efefef;
 }
+/** Menu**/
+.navbar.scrolled {
+    background-color: #efefef;
+}
 
 #changing-text{
     color: #dbdada;

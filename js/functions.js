@@ -17,6 +17,41 @@ function activateDarkMode() {
   } 
 }
 
+/////////////////
+
+var logo = document.querySelector(".navbar-brand");
+
+// Verifica si el ancho de la pantalla es mayor a 992px
+var mq = window.matchMedia("(min-width: 992px)");
+
+function checkWidth(mq) {
+  if (mq.matches) {
+    // si es mayor a 992px, se activa el evento scroll
+    window.onscroll = function() {
+      var scrollPercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+      if (scrollPercent > 0.03) {
+        logo.classList.add("scrolled");
+      } else {
+        logo.classList.remove("scrolled");
+      }
+    };
+  } else {
+    // si es menor a 992px, se remueve el evento scroll
+    window.onscroll = null;
+    logo.classList.remove("scrolled");
+  }
+}
+
+// se verifica el ancho de la pantalla al cargar la página
+checkWidth(mq);
+
+// se verifica el ancho de la pantalla cada vez que se cambia el tamaño de la pantalla
+mq.addEventListener("resize", function() {
+  checkWidth(mq);
+});
+
+//////////////
+
 //Efecto de escritura y borrado de texto
 var texts = ["#Desarrollador", "#Web", "#Marketing"];
 var i = 0;

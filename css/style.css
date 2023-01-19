@@ -34,10 +34,10 @@ header{
 
 /** Header **/
  #changing-text{
-    position: absolute;
+    /*position: absolute;
     z-index: -1;
-    top: 70%;
-    font-size: 12em;
+    top: 70%;*/
+    font-size: 5em;
     max-width: 100%;
     text-overflow: ellipsis;
 }
@@ -57,7 +57,9 @@ header{
 /** Section : Portfolio **/
 .card{
     margin-bottom: 2em;
+    overflow: hidden;
 }
+
 .shadow_animation{
     transition: 0.4s;
 }
@@ -84,12 +86,12 @@ div#lenguajes > div > img{
     max-height: 800px;
 }
 
-a img{
+#contacto a img{
     width: 4em;
     height: fit-content;
 }
 
-/* Media Queries*/
+/**** Media Queries****/
 @media (max-width: 768px) {
     .container{
         max-width:90%;
@@ -104,16 +106,24 @@ a img{
     h2{
         font-size: 3em;
     }
+    /**Logo del menu*/
     a.navbar-brand{
         max-width: 50%;
     }
-
-    
+ 
 }
 
 @media (min-width: 992px) {
+    /**Logo del menu*/
+    a.navbar-brand.scrolled {
+        transform: scale(1.8);
+        transition: all 0.5s ease-in-out;
+        margin-right:2.5em;
+    }
+
     a.navbar-brand{
-        max-width: 30%;
+        transition: all 0.5s ease-in-out;
+        max-width: 5%;
     }
 
     header > div > img{
@@ -121,5 +131,16 @@ a img{
     }
 
 }
+
+@media (min-width: 1200px) {
+ /** Header **/
+ #changing-text{
+    font-size: 10em;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    }
+}
+
+
   
 
