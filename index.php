@@ -17,8 +17,11 @@
 <main id="portfolio" class="container section">
     <h2 class="text-center">Portfolio</h2>
     <div class="row d-flex justify-content-around">
+
         <div class="card shadow_animation col-5">
-            <img src="resources/imgs/AOVE_LaTaranta_deskopt.webp" class="card-img-top" alt="...">
+            <div class="position-relative card-caja">
+                <img src="resources/imgs/AOVE_LaTaranta_deskopt.webp" class="" alt="...">
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -27,7 +30,20 @@
         </div>
 
         <div class="card shadow_animation col-5">
-            <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
+            <div class="position-relative card-caja">
+                <img src="https://via.placeholder.com/400x400.png" class="" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div class="postion-relative">
+        </div>
+
+        <div class="card shadow_animation col-5">
+            <div class="position-relative card-caja">
+                <img src="https://via.placeholder.com/400x400.png" class="" alt="...">
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -36,16 +52,9 @@
         </div>
 
         <div class="card shadow_animation col-5">
-                <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-        <div class="card shadow_animation col-5">
-            <div class="card-img-top"><img src="resources/imgs/statFootball.webp"  alt="..."></div> 
+            <div class="position-relative card-caja">
+                <img src="resources/imgs/statFootball.webp"  alt="...">
+            </div> 
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -54,7 +63,9 @@
         </div>
 
         <div class="card shadow_animation col-5">
-            <img src="resources/imgs/Cabecera.webp" class="card-img-top" alt="...">
+            <div class="position-relative card-caja">
+                <img src="resources/imgs/Cabecera.webp" class="" alt="...">
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -63,13 +74,15 @@
         </div>
 
         <div class="card shadow_animation col-5">
-                <img src="resources/imgs/futbol_v1.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+            <div class="position-relative card-caja">
+                <img src="resources/imgs/futbol_v1.webp" class="" alt="...">
             </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
     </div>
 
 </main>
