@@ -2,10 +2,8 @@
     $titulo = 'Jesús Martínez Bruque';
     require('resources/head.php');
 ?>
-<body>
-    <?php require('resources/body.php');?>
-<header class="d-flex align-items-center flex-column">
-    <nav class="navbar navbar-expand-lg navbar-light">
+<body >
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
                 <img class="mw-100" src="resources/imgs/iconMenu.png" alt="Logo">
@@ -38,6 +36,8 @@
             </div>
         </div>
     </nav>
+    <?php require('resources/body.php');?>
+<header class="d-flex align-items-center flex-column">
 <div class="my-auto">
     <img class="mx-auto mw-100" src="resources/imgs/logo.png" alt="Logo">
 </div>
@@ -46,10 +46,10 @@
 
 </header>
 <main id="portfolio" class="container section">
-    <h2 class="text-center mb-4">Portfolio</h2>
+    <h2 class="text-center">Portfolio</h2>
     <div class="row d-flex justify-content-around">
         <div class="card shadow_animation col-4" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -58,7 +58,7 @@
         </div>
 
         <div class="card shadow_animation col-4" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -67,7 +67,7 @@
         </div>
 
         <div class="card shadow_animation col-4" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -76,7 +76,7 @@
             </div>
 
         <div class="card shadow_animation col-4" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -85,7 +85,7 @@
         </div>
 
         <div class="card shadow_animation col-4" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -94,7 +94,7 @@
         </div>
 
         <div class="card shadow_animation col-4" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -132,12 +132,15 @@
     <h2 class="text-center mb-5">Trayectoria Académica</h2>
 </div>
 
-<div id="contacto" class="container-fluid section">   
+<div id="contacto" class="container-fluid">   
     <div class="row">
         <div class="col-4">
             <h2 class="my-5 text-light">Contacto</h2>
-            <h3 class="text-light">email</h3>
-            <a href="mailto:jmbcompra@gmail.com" class="text-light">jmbcompra@gmail.com</a>
+            <h3 class="text-light">Email</h3>
+            <a href="mailto:jmbcompra@gmail.com" class="">jmbcompra@gmail.com</a>
+            <h3 class="text-light mt-5 mb-3">Redes Sociales</h3>
+            <a href="https://www.linkedin.com/in/jesusmartinezbruque/" target="_blank"><img src="resources/imgs/linkedin-logo.png" alt="logo Linkedin"></a>
+            <a href="https://github.com/Bruma93" target="_blank"><img src="resources/imgs/github.png" alt="Logo GitHub"></a>
         </div>
         <div class="col-8">
             <img src="resources/imgs/placeholder.jpg" alt="">
@@ -145,8 +148,8 @@
     </div>
 </div>
 
-<footer>
-    
+<footer class="container-fluid bg-dark text-center">
+    <h6 class="text-light py-4 mb-0"> Jesús Bruma 2023 </h6>
 </footer>
 
 

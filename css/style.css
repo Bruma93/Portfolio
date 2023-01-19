@@ -1,3 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Textos*/
+h1,h2,h3,h4,h5,h6,a,p,label{
+/*     font-family: 'Nunito', sans-serif;
+    font-weight: 600; */
+    line-height: 1.2em;
+}
+
 h2{
     font-size: 4em;
     margin-bottom:2em
@@ -11,15 +22,17 @@ header{
     min-height: 100vh;
 }
 
-.section:not(:last-of-type){
+.section{
     padding-bottom: 10em;
 }
 
+/** Menu **/
 #modoButton{
     width: 30px;
     height:fit-content;
 }
 
+/** Header **/
  #changing-text{
     position: absolute;
     z-index: -1;
@@ -33,12 +46,15 @@ header{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity linear;
-  }
-  .visible {
+}
+
+.visible {
     visibility: visible;
     opacity: 1;
     transition: opacity  linear;
-  }
+}
+
+/** Section : Portfolio **/
 .card{
     margin-bottom: 2em;
 }
@@ -68,6 +84,11 @@ div#lenguajes > div > img{
     max-height: 800px;
 }
 
+a img{
+    width: 4em;
+    height: fit-content;
+}
+
 /* Media Queries*/
 @media (max-width: 768px) {
     .container{
@@ -92,7 +113,7 @@ div#lenguajes > div > img{
 
 @media (min-width: 992px) {
     a.navbar-brand{
-        max-width: 25%;
+        max-width: 30%;
     }
 
     header > div > img{
