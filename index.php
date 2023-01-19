@@ -17,7 +17,7 @@
 <main id="portfolio" class="container section">
     <h2 class="text-center">Portfolio</h2>
     <div class="row d-flex justify-content-around">
-        <div class="card shadow_animation col-4" style="width: 18rem;">
+        <div class="card shadow_animation col-5">
             <img src="resources/imgs/AOVE_LaTaranta_deskopt.webp" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class="card shadow_animation col-4" style="width: 18rem;">
+        <div class="card shadow_animation col-5">
             <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="card shadow_animation col-4" style="width: 18rem;">
+        <div class="card shadow_animation col-5">
                 <img src="https://via.placeholder.com/400x400.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-        <div class="card shadow_animation col-4" style="width: 18rem;">
+        <div class="card shadow_animation col-5">
             <div class="card-img-top"><img src="resources/imgs/statFootball.webp"  alt="..."></div> 
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="card shadow_animation col-4" style="width: 18rem;">
+        <div class="card shadow_animation col-5">
             <img src="resources/imgs/Cabecera.webp" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="card shadow_animation col-4" style="width: 18rem;">
+        <div class="card shadow_animation col-5">
                 <img src="resources/imgs/futbol_v1.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
