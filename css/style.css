@@ -141,6 +141,35 @@ div#lenguajes > div > img{
         max-width: 5%;
     }
 
+
+    /** Efevto hover intem menu**/
+
+     .nav-item{
+        position: relative;
+     }
+
+    .nav-item::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 0;
+        height: 0.4em;
+        background-color: rgb(255, 251, 0);
+        border-radius: 30px;
+        transition: width 0.4s;
+        bottom: 0.6em;
+        z-index: -1;
+    }
+
+    .nav-item:hover::after {
+        width: 100%;
+        
+    }
+
+    .mobile-menu>li>a:not(.hello):hover::after {
+        width: 95%;
+    }
+
     header > div > img{
         min-width: 28em;
     }
