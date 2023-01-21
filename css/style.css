@@ -1,17 +1,43 @@
+/*** Colores ***/
+:root {
+    --dark: #212529;
+    --dark-blue: #001023;
+    --yellow: #f0d402;
+    --white: #ffffff;
+    --bg-light: #efefef;
+    --bg-dark: #242424;
+    --grey-dark: #494747; 
+    --grey-light: #dbdada;
+    --inter: 'Inter', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
+
 /*Textos*/
 h1,h2,h3,h4,h5,h6,a,p,label{
-/*     font-family: 'Nunito', sans-serif;
-    font-weight: 600; */
     line-height: 1.2em;
+}
+h1,h4,h5,h6,a,p,label{
+    font-family: 'montserrat', sans-serif;
+}
+h2,h3{
+    font-family: 'antonio', sans-serif;
 }
 
 h2{
     font-size: 4em;
     margin-bottom:2em
+}
+
+a{
+    color:var(--yellow);
+}
+
+span{
+    color: var(--yellow);
 }
 
 img{
@@ -37,7 +63,8 @@ header{
     /*position: absolute;
     z-index: -1;
     top: 70%;*/
-    font-size: 5em;
+    /* font-size: 5em; */
+
     max-width: 100%;
     text-overflow: ellipsis;
 }
@@ -90,6 +117,31 @@ div#lenguajes > div > img{
     height: fit-content;
 }
 
+/* Sectio : Experiencia*/
+#experiencia h2,
+#experiencia h3,
+#experiencia hr {
+    margin-bottom: 0.5em;
+}
+
+#experiencia h5 {
+    margin-bottom: 0.3em;
+}
+
+#experiencia li {
+    list-style: none;
+    font-size: 1em;
+}
+
+#experiencia li::before {
+    content: "\2611";
+    padding-right: 1em;
+}
+
+#experiencia div:not(#experiencia div:last-of-type) {
+    margin-bottom: 6em;
+}
+
 /* Section : Contacto */
 
 #contacto div.row > :first-child{
@@ -111,9 +163,9 @@ div#lenguajes > div > img{
     .container{
         max-width:90%;
     }
+
    #changing-text{
         font-size: 2em;
-        max-width: 100%;
     }
 }
 
@@ -124,6 +176,10 @@ div#lenguajes > div > img{
     /**Logo del menu*/
     a.navbar-brand{
         max-width: 50%;
+    }
+
+    #box-text-logo{
+        height: 100vh;
     }
  
 }
@@ -174,14 +230,65 @@ div#lenguajes > div > img{
         min-width: 28em;
     }
 
+
+    main li::before {
+        content: "\2611";
+        padding-right: 1em;
+    }
+    
+    main div:not(main div:last-of-type) {
+        margin-bottom: 6em;
+    }
+    
+    /** Section : Experiencia**/
+ 
+    #experiencian div {
+        width: 44%;
+        position: relative;
+    }
+    div#benow::before,
+    div#wom::before,
+    div#wilcox:before,
+    div#expomoto::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    div#benow:before {
+        background: url(../resources/imgs/benow.png) no-repeat;
+        transform: rotate( 90deg);
+        opacity: 40%;
+        background-size: 17em;
+    }
+    div#wom:before {
+        background: url(../resources/imgs/wom.png) no-repeat;
+        transform: rotate( 90deg);
+        opacity: 50%;
+    }
+    div#wilcox:before {
+        background: url(../resources/imgs/Wilcox.png) no-repeat;
+        opacity: 40%;
+        background-size: 12em;
+        background-position-x: right;
+    }
+    div#expomoto:before {
+        background: url(../resources/imgs/expomoto.png) no-repeat;
+        transform: rotate( 90deg);
+        opacity: 70%;
+        background-size: 20em;
+    }
+
+
+
 }
 
 @media (min-width: 1200px) {
  /** Header **/
  #changing-text{
-    font-size: 10em;
+    font-size: 5em;
     max-width: 100%;
-    text-overflow: ellipsis;
     }
 }
 

@@ -7,8 +7,23 @@
     <?php require('resources/nav.php');?>
 <header class="d-flex align-items-center flex-column">
 
-<div class="container my-auto d-grid">
-    <img class="mx-auto mw-100 mb-4" src="resources/imgs/logo.png" alt="Logo">
+<div class="container my-auto d-flex">
+    <div class="me-auto col-6 d-none d-md-block">
+        <img  src="resources/imgs/logo-dark.svg" width="80%" alt="Logo">
+    </div>
+    <div class="col d-flex flex-column justify-content-evenly" id="box-text-logo">
+        <div>
+            <h4>En pocas palabras soy</h4>
+            <h1><b>Jesús Martínez Bruque</b></h1>
+            <h4><span>Proto</span> Web Design | IOS Developers | Android Developer | Software Developer</h4>
+        </div>
+        <h3 id="changing-text" class="text-center visible"></h3>
+    </div>
+    
+</div>
+
+<div class="container my-auto d-grid d-none">
+    <img class="mx-auto mw-100 mb-4" src="resources/imgs/logo-dark.svg" alt="Logo">
     <h3 id="changing-text" class="text-center visible"></h3>
 </div>
 
@@ -112,6 +127,82 @@
 
 <div id="experiencia" class="container section">
     <h2 class="text-center mb-5">Trayectoria Profesional</h2>
+    <div id="trabajos" class="d-flex justify-content-around flex-wrap">
+        <div id="benow" class="position-relative col-12 col-sm-5 me-5-sm">
+            <h2>Social Media</h2>
+            <h3>Benow Media</h3>
+            <hr>
+            <h5>Duración</h5>
+            <p>Desde Septiembre 2021 - Actualidad</p>
+            <hr>
+            <h5>Tipo de contrato</h5>
+            <p>Contrato de Formación</p>
+            <hr>
+            <h5>Funciones</h5>
+            <ul>
+                <li>Gestión de Redes Sociales</li>
+                <li>Creación de contenido</li>
+                <li>Redacción de contenido SEO</li> 
+            </ul>
+        </div>
+
+        <div id="wom" class="position-relative col-12 col-sm-5">
+            <h2>Social Media</h2>
+            <h3>WOM Marketing</h3>
+            <hr>
+            <h5>Duración</h5>
+            <p>Desde Diciembre 2018 - Noviembre 2020</p>
+            <hr>
+            <h5>Tipo de contrato</h5>
+            <p>Contrato de Formación</p>
+            <hr>
+            <h5>Funciones</h5>
+            <ul>
+                <li>Gestión de Redes Sociales</li>
+                <li>Gestión de Campañas en Facebook Ads</li>            
+                <li>Creación de contenido</li>
+                <li>Creación de páginas web a través del CMR Wordpress</li>
+                <li>Redacción de contenido SEO</li> 
+            </ul>
+        </div>
+
+        <div id="wilcox" class="position-relative col-12 col-sm-5 me-5-sm">
+            <h2>Maquetador Wordpress</h2>
+            <h3>Wilcox Rocha</h3>
+            <hr>
+            <h5>Duración</h5>
+            <p>Desde marzo 2018 - Octubre 2018</p>
+            <hr>
+            <h5>Tipo de contrato</h5>
+            <p>Prácticas extracurriculares</p>
+            <hr>
+            <h5>Funciones</h5>
+            <ul>
+                <li>Maquetación de web en Wordpress</li>
+                <li>Migración de sitios web</li>
+
+            </ul>
+        </div>
+
+        <div id="expomoto" class="position-relative col-12 col-sm-5">
+            <h2>Auxiliar de Contabilidad</h2>
+            <h3>ExpoMoto</h3>
+            <hr>
+            <h5>Duración</h5>
+            <p>Desde Febrero 2017 - Mayo 2017</p>
+            <hr>
+            <h5>Tipo de contrato</h5>
+            <p>Prácticas curriculares</p>
+            <hr>
+            <h5>Funciones</h5>
+            <ul>
+                <li>Balances</li>
+                <li>Arqueos de caja</li>            
+                <li>Gestión del archivo</li>
+
+            </ul>
+        </div>
+    </div>
 </div>
 
 <div id="educacion" class="container section">
@@ -134,10 +225,10 @@
     </div>
 </div>
 
-<footer class="container-fluid bg-dark text-center">
-    <h6 class="text-light py-4 mb-0"> Jesús Bruma 2023 </h6>
+<footer class="container-fluid bg-dark py-4">
+    <hr>
+    <h6 class="text-light mb-0 text-center"> Jesús Bruma 2023 </h6>
 </footer>
-
 
 <script src="js/functions.js"></script>
 
