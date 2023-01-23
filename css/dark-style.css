@@ -1,16 +1,77 @@
-body{
-    background-color: #242424;
+:root {
+    --dark: #212529;
+    --dark-blue: #001023;
+    --turkish-blue:#00b1b1;
+    --yellow: #f0d402;
+    --yellow-orange: #f0c402;
+    --white: #ffffff;
+    --bg-light: #efefef;
+    --bg-dark: #242424;
+    --grey-dark: #494747; 
+    --grey-light: #dbdada;
+    --inter: 'Inter', sans-serif;
 }
 
-h2{
-    color:#dbdada;
+body{
+    background-color: darkblue;
+}
+
+h1,h2,h3,h4,h5,h6,a,p,li,label{
+    color:var(--bg-light);
+}
+
+::selection {
+    background-color: var(--turkish-blue);
+    color: #f7f7ff;
+}
+
+a{
+    color:var(--turkish-blue);
+}
+
+span{
+    color: var(--turkish-blue);
+}
+
+.btn-primary{
+    background-color: var(--turkish-blue);
+    border-color: var(--turkish-blue);
+    color: var(--white);
+}
+
+body{
+    background-color: var(--dark-blue);
+}
+/** Menu**/
+/* Efevto hover item menu*/
+.nav-item::after {
+    background-color: var(--turkish-blue);
+}
+
+.navbar.scrolled {
+    background-color: var(--dark-blue);
 }
 
 #changing-text{
-    color: #494747;
+    color: #dbdada;
+}
+
+/* Section : Experiencia */
+
+
+div#wom:before {
+    mix-blend-mode: screen;
 }
 
 /* Section : Contacto */
 #contacto{
-    background-color: #dbdada;
-} 
+    background-color: var(--yellow-orange);
+}
+
+/*Footer*/
+footer{
+    background-color: var(--yellow-orange);
+}
+footer hr{
+    color: var(--grey-dark);
+}

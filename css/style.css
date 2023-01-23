@@ -1,24 +1,15 @@
 /*** Colores ***/
-:root {
-    --dark: #212529;
-    --dark-blue: #001023;
-    --yellow: #f0d402;
-    --white: #ffffff;
-    --bg-light: #efefef;
-    --bg-dark: #242424;
-    --grey-dark: #494747; 
-    --grey-light: #dbdada;
-    --inter: 'Inter', sans-serif;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 
 /*Textos*/
-h1,h2,h3,h4,h5,h6,a,p,label{
+h1,h2,h3,h4,h5,h6{
     line-height: 1.2em;
+}
+a,p,label{
+    line-height: 1.5em;
 }
 h1,h4,h5,h6,a,p,label{
     font-family: 'montserrat', sans-serif;
@@ -29,16 +20,8 @@ h2,h3{
 
 h2{
     font-size: 4em;
-    margin-bottom:2em
 }
 
-a{
-    color:var(--yellow);
-}
-
-span{
-    color: var(--yellow);
-}
 
 img{
     max-width: 100%;
@@ -51,6 +34,12 @@ header{
 .section{
     padding-bottom: 10em;
 }
+
+.section h2{
+    margin-bottom: 2.5em;
+}
+
+
 
 /** Menu **/
 #modoButton{
@@ -99,7 +88,10 @@ header{
     height: auto;
     width: fit-content;
     max-height: 100%;
+}
 
+.card .card-caja img:hover{
+    cursor: pointer;
 }
 
 .shadow_animation{
@@ -112,13 +104,31 @@ header{
     transition: 0.4s;
 }
 
+.tech_usadas img{
+    width: 40px;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+.tech_usadas img:not(:last-child){
+    margin-right: 0.5em;
+}
+
 /* Section : Lenguajes */
-div#lenguajes > div > img{
+#logos{
     height: fit-content;
 }
 
+#lenguajes > div > img{
+    height: fit-content;
+}
+
+#lenguajes > div:first-of-type p{
+font-size: 1.2em;
+}
+
 /* Sectio : Experiencia*/
-#experiencia h2,
+#experiencia div h2,
 #experiencia h3,
 #experiencia hr {
     margin-bottom: 0.5em;
@@ -138,8 +148,8 @@ div#lenguajes > div > img{
     padding-right: 1em;
 }
 
-#experiencia div:not(#experiencia div:last-of-type) {
-    margin-bottom: 6em;
+#trabajos div:not(#trabajos div:last-of-type) {
+    margin-bottom: 4em;
 }
 
 /* Section : Contacto */
@@ -156,6 +166,11 @@ div#lenguajes > div > img{
 #contacto a img{
     width: 4em;
     height: fit-content;
+}
+
+footer hr{
+    height: 1px!important;
+    opacity: 0.5;
 }
 
 /**** Media Queries****/
@@ -198,7 +213,7 @@ div#lenguajes > div > img{
     }
 
 
-    /** Efevto hover intem menu**/
+    /** Efevto hover item menu**/
 
      .nav-item{
         position: relative;
@@ -210,7 +225,6 @@ div#lenguajes > div > img{
         display: block;
         width: 0;
         height: 0.4em;
-        background-color: rgb(255, 251, 0);
         border-radius: 30px;
         transition: width 0.4s;
         bottom: 0.6em;
@@ -230,20 +244,18 @@ div#lenguajes > div > img{
         min-width: 28em;
     }
 
-
-    main li::before {
+/** Section : Experiencia**/
+    #experiencia li::before {
         content: "\2611";
         padding-right: 1em;
     }
     
-    main div:not(main div:last-of-type) {
+    #experiencia div:not(main div:last-of-type) {
         margin-bottom: 6em;
     }
     
-    /** Section : Experiencia**/
- 
+
     #experiencian div {
-        width: 44%;
         position: relative;
     }
     div#benow::before,
@@ -260,24 +272,29 @@ div#lenguajes > div > img{
         background: url(../resources/imgs/benow.png) no-repeat;
         transform: rotate( 90deg);
         opacity: 40%;
-        background-size: 17em;
+        background-size: 13.5em;
+        background-position-y:60px;
     }
     div#wom:before {
-        background: url(../resources/imgs/wom.png) no-repeat;
+        background: url(../resources/imgs/wom-logo.png) no-repeat;
         transform: rotate( 90deg);
-        opacity: 50%;
+        opacity: 40%;
+        background-size: 12em;
+        background-position-y:60px;
     }
     div#wilcox:before {
         background: url(../resources/imgs/Wilcox.png) no-repeat;
+        transform: rotate( 90deg);
         opacity: 40%;
-        background-size: 12em;
-        background-position-x: right;
+        background-size: 8em;
+        background-position-y:60px;
     }
     div#expomoto:before {
         background: url(../resources/imgs/expomoto.png) no-repeat;
         transform: rotate( 90deg);
         opacity: 70%;
-        background-size: 20em;
+        background-size: 15em;
+        background-position-y:60px;
     }
 
 
@@ -289,6 +306,28 @@ div#lenguajes > div > img{
  #changing-text{
     font-size: 5em;
     max-width: 100%;
+    }
+}
+
+@media (min-width: 1400px){
+    div#benow::before,
+    div#wom::before,
+    div#wilcox:before,
+    div#expomoto::before {
+        background-position-y:0px ;
+    }
+
+    div#benow:before {
+        background-size: 17em;
+    }
+    div#wom:before {
+        background-size: 16em;
+    }
+    div#wilcox:before {
+        background-size: 12em;
+    }
+    div#expomoto:before {
+        background-size: 20em;
     }
 }
 

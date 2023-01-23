@@ -1,7 +1,44 @@
+:root {
+    --dark: #212529;
+    --dark-blue: #001023;
+    --yellow: #f0d402;
+    --yellow-orange: #f0c402;
+    --white: #ffffff;
+    --bg-light: #efefef;
+    --bg-dark: #242424;
+    --grey-dark: #494747; 
+    --grey-light: #dbdada;
+    --inter: 'Inter', sans-serif;
+}
+
+::selection {
+    background-color: var(--dark-blue);
+    color: #f7f7ff;
+}
+
+a{
+    color:var(--yellow);
+}
+
+span{
+    color: var(--yellow);
+}
+
+.btn-primary{
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+    color: var(--white);
+}
+
 body{
     background-color: #efefef;
 }
 /** Menu**/
+/* Efevto hover item menu*/
+.nav-item::after {
+    background-color: var(--yellow);
+}
+
 .navbar.scrolled {
     background-color: #efefef;
 }
@@ -13,4 +50,12 @@ body{
 /* Section : Contacto */
 #contacto{
     background-color: #242424;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--bg-dark);
+}
+footer hr{
+    color: var(--white);
 }

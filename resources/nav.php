@@ -17,7 +17,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#educación">Educación</a>
+                        <a class="nav-link" href="#educacion">Educación</a>
                     </li>
 
                     <li class="nav-item">
