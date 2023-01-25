@@ -12,10 +12,10 @@ h1,h2,h3,h4,h5,h6{
 a,p,label{
     line-height: 1.5em;
 }
-h1,h4,h5,h6,a,p,label{
+h1,h5,h6,a,p,label{
     font-family: 'montserrat', sans-serif;
 }
-h2,h3{
+h2,h3,h4{
     font-family: 'antonio', sans-serif;
 }
 
@@ -73,7 +73,7 @@ header{
 
 /** Section : Portfolio **/
 .card{
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     overflow: hidden;
 }
 
@@ -135,6 +135,10 @@ font-size: 1.2em;
     margin-bottom: 0.5em;
 }
 
+#experiencia div h2{
+    font-size: 3em;
+}
+
 #experiencia h5 {
     margin-bottom: 0.3em;
 }
@@ -151,6 +155,11 @@ font-size: 1.2em;
 
 #trabajos div:not(#trabajos div:last-of-type) {
     margin-bottom: 4em;
+}
+
+/* Section : Educacion */
+#educacion p{
+    margin-bottom: 30px;
 }
 
 /* Section : Contacto */

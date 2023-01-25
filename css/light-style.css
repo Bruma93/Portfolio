@@ -47,6 +47,12 @@ body{
     color: #dbdada;
 }
 
+/* Section : Portfolio */
+.card{
+    background-color: #f9f7f7;
+    border: none;
+}
+
 /* Section : Contacto */
 #contacto{
     background-color: #242424;

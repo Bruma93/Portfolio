@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top scrolled">
         <div class="container-fluid">
             <a class="navbar-brand ms-3 ms-md-5" href="index.php">
-                <img class="" src="resources/imgs/logo-dark.svg" width="300px"alt="Logo">
+                <img id ="logo-menu"class="" src="resources/imgs/logo-dark.svg" width="300px"alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

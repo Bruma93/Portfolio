@@ -3,6 +3,7 @@
 var style = document.getElementById("estilos");
 var imagen_modo = document.getElementById("modoButton");
 var logo_principal = document.getElementById("logo-principal");
+var logo_menu = document.getElementById("logo-menu");
 var oscuro = false;
 
 // función para activar el dark mode
@@ -11,11 +12,13 @@ function activateDarkMode() {
     style.setAttribute("href","css/dark-style.css");
     imagen_modo.setAttribute("src","resources/imgs/sun.png");
     logo_principal.setAttribute("src","resources/imgs/logo_yellow.png");
+    logo_menu.setAttribute("src","resources/imgs/logo_yellow.png")
     oscuro = true; 
   }else{
     style.setAttribute("href","css/light-style.css");
     imagen_modo.setAttribute("src","resources/imgs/moon.png");
-    logo_principal.setAttribute("src","resources/imgs/dark-logo.png");
+    logo_principal.setAttribute("src","resources/imgs/logo-dark.svg");
+    logo_menu.setAttribute("src","resources/imgs/logo-dark.svg");
     oscuro = false; 
   } 
 }
@@ -57,7 +60,7 @@ mq.addEventListener("resize", function() {
 //////////////
 
 /////////Efecto de escritura y borrado de texto
-var texts = ["#Desarrollador", "#Web", "#Marketing"];
+var texts = ["#Desarrollador", "#Web", "Front-end", "Back-end", "#Marketing Digital", "Diseño"];
 var i = 0;
 var speed = 150; // 50ms = 0.05 segundos
 
