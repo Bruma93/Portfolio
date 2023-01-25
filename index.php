@@ -8,7 +8,7 @@
 <header class="d-flex align-items-center flex-column">
 
     <div class="container my-auto d-flex">
-        <div class="me-auto col-6 d-none d-md-block">
+        <div class="me-auto col-6 d-none d-lg-block">
             <img id="logo-principal" src="resources/imgs/logo-dark.svg" width="80%" alt="Logo">
         </div>
         <div class="col d-flex flex-column justify-content-evenly" id="box-text-logo">
@@ -21,10 +21,10 @@
         </div>
     </div>
 
-    <div class="container my-auto d-grid d-none">
+<!--     <div class="container my-auto d-grid d-none">
         <img class="mx-auto mw-100 mb-4" src="resources/imgs/logo-dark.svg" alt="Logo">
         <h3 id="changing-text" class="text-center visible"></h3>
-    </div>
+    </div> -->
 
 </header>
 
@@ -51,7 +51,7 @@
 
         <div class="card shadow_animation col-12 col-md-5">
             <div class="position-relative card-caja">
-                <img src="https://via.placeholder.com/400x400.png" alt="..." id="" class="">
+                <img src="resources/imgs/Web Personal 1.jpg" alt="..." id="" class="">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Portfolio (Rompiendo la cuarta pared)</h5>
@@ -128,35 +128,35 @@
 <div id="lenguajes" class="container section">
     <h2 class="text-center mb-2">Lenguajes, tecnologías y...</h2>
     <h6 class="text-center pb-5">otras cosas bonitas</h6>
-    <div class="row pt-5">
-        <div class="col col-2-md">
+    <div class="row pt-0 pt-md-5">
+        <div class="col-12 col-md-6">
             <p>Durante muchos años no he dejado de aprender. Desde que comencé realizando las primeras webs en Wordpress, siempre ha habido algo que me ha llamado la atención y me ha hecho querer aprender algo nuevo. <b>HTML y CSS, PHP y Javascript, Kotlin y Swift, etc.</b> !Soy una persona inquieta!</p>
             <p>Sin embargo esto también ha provocado que no me haya especializado en ninguna rama. <b>Front end, Back end, aplicaciones móviles...</b> ¿De verdad tengo que quedarme solo con una?</p>
             <p></p>
         </div>
-        <div id="logos" class="row col col-2-md d-flex justify-content-around">
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/javascript.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/html.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="HtML5">
+        <div id="logos" class="row col-12 col-md-6 d-flex justify-content-around ps-5">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/javascript.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/html.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="HtML5">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/css-3.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/css-3.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/php.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/php.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/swift.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Swift">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/swift.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Swift">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/kotlin.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Kotlin">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/kotlin.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Kotlin">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/vue.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Vue JS">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/vue.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Vue JS">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/laravel.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/laravel.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel">
             
-            <img class="col-4 col-md-2 my-auto" src="resources/imgs/Logos/git.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Git">
+            <img class="col-3 col-md-2 my-auto" src="resources/imgs/Logos/git.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Git">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/wordpress.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/wordpress.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/visualStudio.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Visual Studio">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/visualStudio.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Visual Studio">
 
-            <img class="col-4 col-md-2 my-2" src="resources/imgs/Logos/Photoshop.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Photoshop">
+            <img class="col-3 col-md-2 my-2" src="resources/imgs/Logos/Photoshop.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Photoshop">
         </div>
     </div>
     
@@ -242,7 +242,32 @@
 </div>
 
 <div id="educacion" class="container section">
-    <h2 class="text-center mb-5">Trayectoria Académica</h2>
+    <h2 class="text-center mb-5">Títulos académicos</h2>
+    <div class="row pb-5">
+        <div class="col-12 col-md-4 pb-3 text-center">
+            <img src="resources/imgs/Estech_logo.png" alt="Logo Estech" class="pb-3 mx-auto" width="130px">
+             <h4>Técnico de Desarrollo de Aplicaciones Multiplataforma en la escuela de technologías Es[Tech] | 2023 </h4>
+
+        </div>
+        <div class="col-12 col-md-4 pb-3 text-center">
+            <img src="resources/imgs/UMA_logo.png" alt="Logo UMA" class="pb-3 mx-auto" width="130px">
+            <h4>Máster en Gestión y Administración de Márketing Digital por la universidad de Málaga | 2019 </h4>
+        </div>
+        <div class="col-12 col-md-4 pb-3 text-center">
+            <img src="resources/imgs/UJA.png" alt="Logo Uja" class="pb-3 mx-auto" width="130px">
+            <h4>Grado en Administración y Dirección de Empresas por la universidad de Jaén | 2017 </h4>
+        </div>
+</div>
+   
+    <h3>Cursos Adicionales</h3>
+    <img src="https://img.icons8.com/color/48/null/great-britain-circular.png"/><b>B1 de INGLÉS por Cambridge</b></br>
+    <img src="https://img.icons8.com/color/48/null/under-computer.png"/> <b>Curso Google Analytics Advanced (Google)</b></br>
+    <img src="https://img.icons8.com/color/48/null/under-computer.png"/> <b>INICIACIÓN A LA PROGRAMACIÓN WEB: PHP (Junta de andalucía)</b><br>
+    <img src="https://img.icons8.com/color/48/null/man_reading_a_book.png"/><b>ANALÍTICA WEB PARA MEDIR RESULTADOS DE MARKETING (Nortempo)</b></br>
+    <img src="https://img.icons8.com/color/48/null/man_reading_a_book.png"/><b>Curso Google Analytics Advanced (Google)Curso de Marketing Digital, aumenta tus conversiones y tu tráfico web, (Benowu)</b></br>
+    <img src="https://img.icons8.com/color/48/null/paint-palette-with-brush.png"/><b>ADOBE PHOTOSHOP CS6 AVANZADO (Forinema)</b></br>
+    <img src="https://img.icons8.com/color/48/null/paint-palette-with-brush.png"/><b>VII Curso De Extensión Universitaria En Diseño Gráfico: Marketing Creativo Y Creatividad Aplicada (UMA)</b></br>
+    
 </div>
 
 <div id="contacto" class="container-fluid">   
