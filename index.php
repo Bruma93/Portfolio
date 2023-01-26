@@ -9,9 +9,10 @@
 
     <div class="container my-auto d-flex">
         <div class="me-auto col-6 d-none d-lg-block">
-            <img id="logo-principal" src="resources/imgs/logo-dark.svg" width="80%" alt="Logo">
+           
         </div>
         <div class="col d-flex flex-column justify-content-evenly" id="box-text-logo">
+        <img id="logo-principal" class="d-none d-lg-block mb-5" src="resources/imgs/logo-dark.svg" width="200em" alt="Logo">
             <div>
                 <h4>En pocas palabras soy</h4>
                 <h1><b>Jesús Martínez Bruque</b></h1>
@@ -20,11 +21,6 @@
             <h3 id="changing-text" class="text-center visible"></h3>
         </div>
     </div>
-
-<!--     <div class="container my-auto d-grid d-none">
-        <img class="mx-auto mw-100 mb-4" src="resources/imgs/logo-dark.svg" alt="Logo">
-        <h3 id="changing-text" class="text-center visible"></h3>
-    </div> -->
 
 </header>
 

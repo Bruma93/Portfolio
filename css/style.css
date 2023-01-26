@@ -26,10 +26,11 @@ h2{
 
 img{
     max-width: 100%;
+    max-width: fit-content;
 }
 
 header{
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .section{

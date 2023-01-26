@@ -60,7 +60,7 @@ mq.addEventListener("resize", function() {
 //////////////
 
 /////////Efecto de escritura y borrado de texto
-var texts = ["#Desarrollador", "#Web", "Front-end", "Back-end", "#Marketing Digital", "Diseño"];
+var texts = ["#Desarrollador", "#Web", "#Front-end", "#Back-end", "#IOS", "#Android", "#Marketing Digital", "#Diseño"];
 var i = 0;
 var speed = 150; // 50ms = 0.05 segundos
 
