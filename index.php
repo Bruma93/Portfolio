@@ -1,52 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <!-- Meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/null/source-code.png">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link id="estilos" rel="stylesheet" href="css/light-style.css" />
-        <title>Jesús Martínez Bruque</title>
-    </head>
-<body>
-<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<nav class="navbar navbar-expand-lg navbar-light sticky-top scrolled">
-    <div class="container-fluid">
-        <a class="navbar-brand ms-3 ms-md-5" href="index.php">
-            <img id ="logo-menu"class="" src="resources/imgs/logo-dark.svg" width="300px"alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#experiencia">Experiencia</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#educacion">Educación</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-            </ul>
-
-            <a href="resources/documents/CV Jesús Martínez bruque.pdf" class="btn btn-primary button-link ms-auto" target="_blank">Descargar CV</a>
-
-            <img id="modoButton" class="ms-3" onclick="activateDarkMode()" src="resources/imgs/moon.png" alt="Modo">
-            
-        </div>
-    </div>
-</nav>
+<?php 
+    $titulo = 'Jesús Martínez Bruque';
+    require('resources/head.php');
+?>
+<body >
+    <?php require('resources/body.php');?>
+    <?php require('resources/nav.php');?>
 <header class="d-flex align-items-center flex-column">
 
     <div class="container my-auto d-flex">
